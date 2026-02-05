@@ -1,2 +1,2 @@
-# HTLM-CSS-JS
-Pasta com HTML/ CSS/ JS
+# HTLM - JS
+Pasta com HTML / JS
