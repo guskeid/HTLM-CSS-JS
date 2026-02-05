@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+    <style>
+        body {
+            background-color: rgb(6, 44, 255);
+            font: 10pt Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Verificação de pais</h1>
+    Pais <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="address"></div>
+    <script>
+        function verificar(){
+            var br = window.document.querySelector("input#txtpais")
+            var ver = window.document.querySelector("div#address")
+            var pais = br.value.trim().toLowerCase()
+
+            if (pais === "") {
+                ver.innerHTML = "<p style='color:yellow;'>Por favor, digite um país.</p>"
+            } else if (pais === "brasil") {
+                ver.innerHTML = "<p>Você é Brasileiro.</p>"
+            } else {
+                ver.innerHTML = "<p>Você é Estrangeiro.</p>"
+            }
+        }
+
+    </script>
+</body>
+</html>
